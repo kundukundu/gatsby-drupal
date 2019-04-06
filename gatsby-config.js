@@ -30,7 +30,7 @@ module.exports = {
     {
     resolve: `gatsby-source-drupal`,
     options: {
-      baseUrl: `http://127.0.0.1:8888/`,
+      baseUrl: `https://drupal.chiyana.dev/`,
       apiBase: `jsonapi`, // optional, defaults to `jsonapi`
       },
     },
