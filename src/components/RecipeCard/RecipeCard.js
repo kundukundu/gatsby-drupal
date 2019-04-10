@@ -31,7 +31,7 @@ const styles = {
 
 const RecipeCard = (props) => {
   const { classes } = props;
-  const RecipeLink = props => console.log(props) || <Link to={props.path} {...props}>Read more</Link>;
+  const RecipeLink = props => console.log(props) || <Link to={props.path} {...props}>Leer más</Link>;
   const RecipeImage = props => console.log(props) || <Img fluid={props.image.localFile.childImageSharp.fluid} />;
   return (
     <Card className={classes.card}>
