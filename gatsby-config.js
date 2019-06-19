@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Forcadell Coworking`,
+    title: `FCoworking`,
     description: `Analizamos las necesidades de tu empresa y te asesoramos en la búsqueda del coworking más óptimo para tu crecimiento.`,
     author: `@ITDO_Solutions`,
   },

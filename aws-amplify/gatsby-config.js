@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `FCoworking`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
@@ -30,7 +30,7 @@ module.exports = {
     {
     resolve: `gatsby-source-drupal`,
     options: {
-      baseUrl: `https://drupal.chiyana.dev/`,
+      baseUrl: `https://cmsforcadell.itdo.com/`,
       apiBase: `jsonapi`, // optional, defaults to `jsonapi`
       },
     },
