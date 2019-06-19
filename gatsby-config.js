@@ -33,31 +33,7 @@ module.exports = {
       baseUrl: `https://cmsforcadell.itdo.com/`,
       apiBase: `jsonapi`, // optional, defaults to `jsonapi`
       },
-    },
-    {
-   resolve: 'gatsby-plugin-i18n',
-   options: {
-     langKeyDefault: 'en',
-     useLangKeyLayout: false,
-     markdownRemark: {
-       postPage: 'src/templates/blog-post.js',
-       query: `
-         {
-           allMarkdownRemark {
-             edges {
-               node {
-                 fields {
-                   slug,
-                   langKey
-                 }
-               }
-             }
-           }
-         }
-       `
-     }
-   }
- }
+    }, 
     //{
     //  resolve: `gatsby-source-filesystem`,
   //    options: {
