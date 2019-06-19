@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Forcadell Coworking`,
+    description: `Analizamos las necesidades de tu empresa y te asesoramos en la búsqueda del coworking más óptimo para tu crecimiento.`,
+    author: `@ITDO_Solutions`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,10 +30,34 @@ module.exports = {
     {
     resolve: `gatsby-source-drupal`,
     options: {
-      baseUrl: `https://drupal.chiyana.dev/`,
+      baseUrl: `https://cmsforcadell.itdo.com/`,
       apiBase: `jsonapi`, // optional, defaults to `jsonapi`
       },
     },
+    {
+   resolve: 'gatsby-plugin-i18n',
+   options: {
+     langKeyDefault: 'en',
+     useLangKeyLayout: false,
+     markdownRemark: {
+       postPage: 'src/templates/blog-post.js',
+       query: `
+         {
+           allMarkdownRemark {
+             edges {
+               node {
+                 fields {
+                   slug,
+                   langKey
+                 }
+               }
+             }
+           }
+         }
+       `
+     }
+   }
+ }
     //{
     //  resolve: `gatsby-source-filesystem`,
   //    options: {

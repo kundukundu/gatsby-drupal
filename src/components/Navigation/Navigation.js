@@ -33,7 +33,7 @@ function Navigation(props) {
           <div className={classes.menu}>
               <Button component={Link} to="/" className={classes.menuButton}>Home</Button>
               <Button component={Link} to="/about" className={classes.menuButton}>About</Button>
-              <Button component={Link} to="/4045" className={classes.menuButton}>404</Button>
+              <Button component={Link} to="/404" className={classes.menuButton}>404</Button>
           </div>
         </Toolbar>
       </AppBar>
