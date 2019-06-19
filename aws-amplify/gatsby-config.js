@@ -30,7 +30,7 @@ module.exports = {
     {
     resolve: `gatsby-source-drupal`,
     options: {
-      baseUrl: `https://cmsforcadell.itdo.com/`,
+      baseUrl: `https://drupal.chiyana.dev/`,
       apiBase: `jsonapi`, // optional, defaults to `jsonapi`
       },
     },
